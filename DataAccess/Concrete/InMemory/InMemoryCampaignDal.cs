@@ -7,7 +7,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.InMemory
 {
-    public class InMemoryCampaignDal:ICampaignDal
+    public class InMemoryCampaignDal : ICampaignDal
     {
         private List<Campaign> _campaigns;
 
@@ -27,7 +27,7 @@ namespace DataAccess.Concrete.InMemory
         public void Update(Campaign campaign)
         {
             var campaignToUpdate = _campaigns.SingleOrDefault(c => c.Id == campaign.Id);
-            
+
             if (campaignToUpdate != null)
             {
                 campaignToUpdate.Name = campaign.Name;

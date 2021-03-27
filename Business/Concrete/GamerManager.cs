@@ -19,7 +19,7 @@ namespace Business.Concrete
 
         public void Add(Gamer gamer)
         {
-           _gamerDal.Add(gamer);
+            _gamerDal.Add(gamer);
         }
 
         public void Delete(int gamerId)

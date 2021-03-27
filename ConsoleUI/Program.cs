@@ -1,5 +1,6 @@
 ﻿using System;
 using Business.Concrete;
+using DataAccess.Adapters;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 
